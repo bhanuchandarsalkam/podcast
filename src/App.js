@@ -16,6 +16,7 @@ import Privateroute from "./input/privateroutes.js";
 import Podcast from "./pages/podcast.js"
 import Podcastdetails from "./pages/Podcastdetails.js";
 import Createepisode from "./pages/Createanepisode.js";
+import Header from "./header/header.js"
 const App=()=>{
    const dispatch=useDispatch();
    useEffect(()=>{
@@ -49,8 +50,8 @@ const App=()=>{
    },[])
    return(
     <div>
+      <Header/>
       <ToastContainer/>
-      <Router>
       <Routes>
         <Route path="/signup" element={<Signup/>}/>
         <Route element={<Privateroute/>}>
@@ -61,7 +62,6 @@ const App=()=>{
         <Route path="/podcast/:id/create-episode" element={<Createepisode/>}/>
         </Route>
       </Routes>
-      </Router>
     </div>
    )
 }
