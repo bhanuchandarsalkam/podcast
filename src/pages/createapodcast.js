@@ -5,7 +5,7 @@ const Createapodcast=()=>{
 
     return(
         <div>
-            <Header/>
+            {/* //<Header/> */}
             <div className="wrapper">
             <h1 className="bhanu">createapodcast</h1>
             <Startpodcastpage/>

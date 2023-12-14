@@ -15,7 +15,6 @@ console.log("bhanu");
     }
     return(
         <div>
-             <Header/> 
              <div className="wrapper">
                 {!flag?<h1 className="bhanu">Signup</h1>:<h1 className="bhanu">login</h1>}
              {!flag?<Signupform/>:<Loginform/>}

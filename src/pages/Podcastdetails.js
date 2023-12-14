@@ -53,7 +53,7 @@ const navigate=useNavigate();
    },[id])
     return(
         <div>
-       <Header/>
+      {/* // <Header/> */}
        <div className="wrapper" style={{marginTop:"0rem"}}>
       {
       podcast.id &&(<div>

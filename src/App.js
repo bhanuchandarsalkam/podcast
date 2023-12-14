@@ -50,7 +50,8 @@ const App=()=>{
    },[])
    return(
     <div>
-      <Header/>
+    <Header/>
+    <div>
       <ToastContainer/>
       <Routes>
         <Route path="/signup" element={<Signup/>}/>
@@ -62,6 +63,7 @@ const App=()=>{
         <Route path="/podcast/:id/create-episode" element={<Createepisode/>}/>
         </Route>
       </Routes>
+    </div>
     </div>
    )
 }

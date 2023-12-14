@@ -33,7 +33,7 @@ return()=>{
   var filteredpodcasts=podcasts.filter((item)=>item.title.trim().toLowerCase().includes(search.trim().toLowerCase()))
     return(
         <div>
-            <Header/>
+            {/* <Header/> */}
             <div className="bhanu" style={{ marginTop:"2rem"}}>
             <h1 className="dis">Discover Podcasts</h1>
             <Inputcomponent type="text" placeholder="search by title" state={search} setState={setSearch} />
